@@ -1,0 +1,29 @@
+* { 
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+header, main, section, aside, article, footer, nav, menu, details,figure, figcaption {
+  display: block;
+}
+li { 
+  list-style: none;
+}
+a { 
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+section {
+  margin: 150px 0 150px 0;
+}
+
+.inner{
+  position: relative;
+  max-width: 1775px; 
+  margin: 0 auto;
+}
