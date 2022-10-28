@@ -91,11 +91,8 @@
         <div class="carousel-inner">
           <!--비주얼1-->
           <div class="carousel-item active">
-            <div class="vs1">
-              <!-- 모바일 VS1 -->
-              <div class="m_vs1 d-block d-sm-none">
-                <img src="img/main_visual_01_m.jpg" alt="모바일 VS1">
-              </div>
+            <!-- PC, Tablet VS1 -->
+            <div class="vs1 d-none d-sm-block">
               <div class="visual_text ps-5">
                 <div class="inner">
                   <div class="text1 mb-3">GLOBAL BUSINESS</div>
@@ -110,32 +107,43 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <!--비주얼2-->
-          <div class="carousel-item">
-            <div class="vs2">
-              <!--모바일 VS2-->
-              <!-- <div class="m_vs2 d-block d-sm-none">
-                <img src="img/main_visual_02_m.jpg" alt="모바일 VS2">
-              </div> -->
-
-              <!-- <div class="visual_text ps-5">
+            <!-- 모바일 VS1 -->
+            <div class="m_vs1 d-block d-sm-none">
+              <div class="visual_text ps-5">
                 <div class="inner">
                   <div class="text1 mb-3">GLOBAL BUSINESS</div>
                   <div class="text2 mb-2">
                     <span class="green">N</span>OVEL<br><span class="blue">W</span>ORKS
                   </div>
                 </div>
-              </div> -->
-              <div class="vs_img d-none d-sm-block">
-                <div class="s">
-                  <img src="img/main_visual_02_prd.png" alt="">
-                </div>
               </div>
             </div>
           </div>
-        </div>
+
+          <!--비주얼2-->
+          <div class="carousel-item">
+            <!-- PC, Tablet VS2 -->
+            <div class="vs2 d-none d-sm-block">
+              <div class="visual_text ps-5">
+                <div class="inner">
+                  <div class="text1 mb-3">GLOBAL BUSINESS</div>
+                  <div class="text2 mb-2">
+                    <span class="green">N</span>OVEL<br><span class="blue">W</span>ORKS
+                  </div>
+                </div>
+              </div>
+              <div class="vs_img d-none d-sm-block">
+                <!-- <div class="s">
+                  <img src="img/main_visual_02_prd.png" alt="">
+                </div> -->
+              </div>
+            </div>
+            <!--모바일 VS2-->
+            <div class="m_vs2 d-block d-sm-none">
+            </div>
+          </div>
+        </div><!--carousel-inner END-->
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -145,6 +153,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
       <!-- 왼쪽 스크롤 이미지 -->
       <div class="scroll_img">
         <img src="img/main_scroll_icon.png" alt="스크롤 이미지">
@@ -310,7 +319,7 @@
     <!--******************** 인트로덕션 INTRODUCTION ********************-->
     <section id="introduction">
       <div class="container-xl my-5">
-        <p class="text-center fs-1 fw-bold">
+        <p class="title text-center fs-1 fw-bold">
           <span class="green">D</span>EVELOPMENT <span class="blue">I</span>NTRODUCTION
         </p>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -349,6 +358,7 @@
               </div>
             </div>
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -360,23 +370,13 @@
         </div>
       </div>
     </section>
-
-    
-<!--<div>
-  <div class="d-flex">
-    <h1 class="m-2 d-block d-sm-none">~md / ~575 모바일</h1>
-    <h1 class="m-2 d-none d-sm-block d-xl-none">md~lg/576~1220 태블릿</h1>
-    <h1 class="m-2 d-none d-xl-block">xl이상 / 1200~피씨</h1>
-  </div>
-</div>-->
-
   
     <!--******************** 컨설팅 CONSULTING ***************-->
-    <div class="consulting_wrap">
-      <div class="consulting">
+    <div class="consulting p-5">
+      <div class="container-xl">
         <p class="title fs-2 fw-bold text-center pb-4">온라인 상담신청</p>
         <div class="content_box">
-          <div class="left">
+          <div class="left m-4">
             <!--이름-->
             <div class="input-group mb-3">
               <span class="input-group-text" id="inputGroup-sizing-default">이름</span>
@@ -425,14 +425,15 @@
               </div>
             </div>
           </div>
-          <div class="right">
+          <div class="right m-4">
             <p class="title fw-bold fs-5">문의 내용</p>
-            <textarea name="content" class="p-4" placeholder="문의하실 내용을 입력해주세요. (100자 내외)" cols="80" rows="4"></textarea>
+            <textarea name="content" class="p-4" placeholder="문의하실 내용을 입력해주세요. (100자 내외)" cols="50" rows="3"></textarea>
             <button type="submit">상담 신청하기</button>
           </div>
-  
+
         </div><!--content_box END-->
-      </div><!--consulting END-->
+      </div>
+
     </div>
   </main>
 
@@ -477,9 +478,16 @@
           </ul>
         </div>
       </div>
-      <p class="text-center">Copyright. 2019 Novelworks. All right reserved. 이것은 연습용 사이트입니다.</p>
+      <p class="text-center">Copyright. 2019 Novelworks. All right reserved. 이것은 연습용 클론 사이트입니다.</p>
 
     </div>
   </footer>
+  <!--<div>
+  <div class="d-flex">
+    <h1 class="m-2 d-block d-sm-none">~md / ~575 모바일</h1>
+    <h1 class="m-2 d-none d-sm-block d-xl-none">md~lg/576~1220 태블릿</h1>
+    <h1 class="m-2 d-none d-xl-block">xl이상 / 1200~피씨</h1>
+  </div>
+</div>-->
 </body>
 </html>

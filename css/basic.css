@@ -64,9 +64,24 @@
   height: 850px;
   background: #fff url(../img/main_visual_01.jpg) no-repeat 80% top / cover;
 }
+.m_vs1 {
+  position: relative;
+  width: 100%;
+  height: px;
+  background: #fff url(../img/main_visual_01_m.jpg) no-repeat 80% top / cover;
+}
+
 #visual .vs2 {
-  background: #fff url(../img/main_visual_02.jpg) no-repeat 80% top / cover;
+  position: relative;
+  width: 100%;
   height: 850px;
+  background: #fff url(../img/main_visual_02.jpg) no-repeat 80% top / cover;
+}
+.m_vs2 {
+  position: relative;
+  width: 100%;
+  height: 633px;
+  background: #fff url(../img/main_visual_02_m.jpg) no-repeat 80% top / cover;
 }
 
 /*** 비주얼 텍스트 ***/
@@ -75,6 +90,11 @@
 }
 .blue {
   color: #0BA9B5;
+}
+.visual_text {
+  position: relative;
+  top: 50%;
+  color: #222;
 }
 /* 텍스트 공통 */
 .visual_text .inner {
@@ -93,15 +113,9 @@
   letter-spacing: 1px;
   transition-delay: 0.3s;
 }
+/***************/
 
-.visual_text {
-  position: relative;
-  top: 50%;
-  color: #222;
-}
-.vs2 .visual_text, 
-.vs2 .text2 .green, 
-.vs2 .text2 .blue {
+.vs2 .visual_text, .vs2 .green, .vs2 .blue {
   color: #fff;
 }
 
@@ -312,9 +326,7 @@
   z-index: 10;
   text-align: center;
 }
-.cusl1 img {
 
-}
 #introduction .cusl1 .title, .cusl3 .title {
   font-size: 110px;
   font-weight: bold;
@@ -327,17 +339,23 @@
   width: 20%;
 }
 
+@media (max-width: 1220px){
+  .carousel-item .cusl1, .cusl2, .cusl3 {
+    display: none;
+  }
+
+}
 
 
 /********** section4 컨설팅 CONSULTING **********/
 .consulting_wrap {
-  background-color: #f2f2f2;
   padding: 150px 0;
   position: relative;
   margin-top: -344px;
   z-index: -100;
 }
 .consulting {
+  background-color: #f2f2f2;
   max-width: 1600px;
   margin: 100px auto;
 }
@@ -384,15 +402,15 @@
 
 
 /********** 푸터 footer **********/
-footer {
-  position: absolute;
-  z-index: 1000;
+footer { 
+  padding: 60px 0;
   font-weight: 200;
 }
 footer .con {
   width: 75%;
   max-width: 1700px;
   text-align: start;
+  margin: auto;
 }
 footer a {
   text-decoration: none;
